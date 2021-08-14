@@ -2,6 +2,9 @@
  * @param {number[][]} nums
  * @return {number[]}
  */
+
+// 思路: 假设nums中有m个数组，其中数组中最大长度为n， 则对角线总数为m + n - 1 依次遍历
+// 结果: 超时
 // var findDiagonalOrder = function(nums) {
 //     const max = Math.max(...nums.map(a => a.length))
 //     const l = nums.length + max - 1 
@@ -15,6 +18,11 @@
 //     return result
 // };
 
+/**
+ * 思路: 同一对角线上横坐标与纵坐标值的和相同, 依次计算并存储,最后返回
+ * @param {*} nums 
+ * @returns 
+ */
 var findDiagonalOrder = function(nums) {
   const map = new Map()
   nums.forEach((arr, index) => {
