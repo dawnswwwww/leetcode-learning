@@ -1,0 +1,5 @@
+const isSelfCrossing
+
+const isSelfCrossing = () => {
+  
+}
